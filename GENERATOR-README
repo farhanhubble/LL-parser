@@ -1,0 +1,22 @@
+0.  The grammar file 'grammar.txt' should consist of two sections- token declarations and production declarations. Each section must be terminated by a % symbol. Token declaration should done using token = token1 [token2 ...]. Everything to the right of '=' will be treated as a token. Individual tokens must be separated by atleast one white space. Production declaration should be  of the type variable : production1 | production2 | production3 .... ;. Two productions of the same variable must be separated by the pipe '|' symbol. There must be a semicolon ';' after the last production of each variable. The symbols in each production must be separated by atleast one whitespace.
+ 
+1.  The parser generator uses the symbol set  : ; | and % for punctuation. Please do not use these symbols in your grammar. Instead use something like 'colon' or 'modulus' for these grammar symbols.
+
+2.  'epsilon' is reserved as the token for empty strings. It must be used for this purpose only.
+
+3. $ is hard coded as end of input marker. Do not use this symbol in your grammar.
+
+4.  All varibles must appear on the LHS of atleast one production. Otherwise the behavior of the parser generator is unpredictable. 
+
+5.  Any symbol that is not declared as a terminal will be treated as as a variable. 
+
+6.  Sometimes a runtime error [LL-Parser: ../common.c:411: isNullable: Assertion 'j>=0' failed.] may occur because the parser generator tried searching for a variable but did not find it in the grammar table. No productions starting with this varibale were found. Either the grammar uses a terminal symbol that is not declared as a token or it uses a variable symbol that has no associated productions.
+
+7.  There must be atleast one white space between any two grammar symbols. Something like  '(expr)' will be treated as a single unit (symbol) by the parser generator. Store it as   ( expr ) , if you want the symbols to be identified individually.
+
+8.	Some of the files in this directory are used to build the generator while others are used to build the parser. A shell script named AUTOMAKE exists in this directory that can build the two binaries. For a manual build, dependencies can be looked up in AUTOMAKE.
+Please use the switches --std=gnu99 and -Wall when building manually.
+
+9. Binary 'generator' can be invoked to read the grammar from 'grammar.txt', build a parsing table and save it to 'parsing-table.txt ' if no fatal errors are encountered.
+
+10. Binary 'parser' can be invoked to read input from a file and parse it.

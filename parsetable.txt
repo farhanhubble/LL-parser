@@ -1,0 +1,55 @@
+5
+E 
+X 
+B 
+Y 
+F 
+8
+o 
+a 
+n 
+( 
+) 
+t 
+f 
+$ 
+(null)
+(null)
+B  X
+B  X
+(null)
+B  X
+B  X
+(null)
+o  B X
+(null)
+(null)
+(null)
+epsilon 
+(null)
+(null)
+epsilon 
+(null)
+(null)
+F  Y
+F  Y
+(null)
+F  Y
+F  Y
+(null)
+epsilon 
+a  F Y
+(null)
+(null)
+epsilon 
+(null)
+(null)
+epsilon 
+(null)
+(null)
+n  F
+(  E )
+(null)
+t 
+f 
+(null)

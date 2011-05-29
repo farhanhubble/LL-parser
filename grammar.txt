@@ -1,0 +1,24 @@
+tokens : o epsilon a n ( ) t f 
+%
+E : B X
+  ;
+  
+X : o B X
+  | epsilon
+  ;
+  
+B : F Y
+  ;
+  
+Y : a F Y
+  | epsilon
+  ;
+  
+F : n F
+  | ( E )
+  | t
+  | f
+  ;
+%
+  
+

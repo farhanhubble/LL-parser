@@ -1,0 +1,5 @@
+
+gcc -o parser parser-common.c parser-common.h parser-main.c parser-parsing.c -g3 --std=gnu99 -Wall
+    	    
+gcc -o generator generator-common.c generator-common.h generator-main.c   grammar-processing.c parsing-table.c -g3 --std=gnu99 -Wall
+    

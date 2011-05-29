@@ -1,0 +1,5 @@
+1.  Please terminate your input with a '$'.
+2.  There are several files in this directory some are used to build the generator while
+others are used to build the parser.
+3.  Parser and generator can be compiled using the existing AUTOMAKE file. Use "bash ./AUTOMAKE" to compile both the binaries.
+4.	To manually compile see dependencies in AUTOMAKE
